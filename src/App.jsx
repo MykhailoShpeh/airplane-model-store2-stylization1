@@ -4,9 +4,9 @@
 
 // import paintings from './json/paintings.json'
 
-// export default function App() {
-//   return (
-    
-//   );
-// }
+export default function App() {
+  return (
+    <div><h1>HELLO</h1></div>
+  );
+}
 
