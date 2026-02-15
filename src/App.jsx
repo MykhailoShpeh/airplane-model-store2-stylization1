@@ -1,12 +1,28 @@
-// import Section from "./components/Section";
+import './App.css';
 
-// import PaintingList from "./components/PaintingList";
+// import Section from './components/SectionWOSyle';  
+import Section from './components/SectionBuiltInStyles'; //! вбудовані стилі
 
-// import paintings from './json/paintings.json'
+
+import planes from './json/planes.json';
+// import PlanesList from './components/PlanesListWOSyle';
+import PlanesList from './components/PlanesListBuiltInStyles'; //! вбудовані стилі
+
+
+
 
 export default function App() {
   return (
-    <div><h1>HELLO</h1></div>
-  );
-}
+    <>
+      {/* //? Paintings */}
+      {/* <Section title="Колекція картин">
+        <PaintingList items={paintings} />
+      </Section > */}
 
+      {/* //? Planes */}
+      <Section title="Магазин моделей літаків">
+        <PlanesList items={planes} />
+      </Section >
+    </>
+  );
+};
